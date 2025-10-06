@@ -1,10 +1,10 @@
 const helloWorld = () => {
-  
   return (
-    <div className="title">
+    <header className="title">
       <h1>Genshin Wish Theory</h1>
-    </div>
+      <h2>Page under construction. Soon to be a full portfolio site.</h2>
+    </header>
   );
-}
+};
 
-export default helloWorld
+export default helloWorld;
