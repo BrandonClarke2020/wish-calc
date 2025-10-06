@@ -23,13 +23,16 @@ const Advanced = (props: {
     <>
       <div className="container madame-bg">
         <div className="input-wrapper">
+          <div className="flex flex-row gap-2">
+            This is a scrapped feature. Congratulations on finding it.
+          </div>
           <label htmlFor="characters">Number of desired characters</label>
           <input
             onKeyDown={verifyInputIsNumber}
             id="characters"
             type="text"
             className="textbox"
-            onChange={(e) => {
+            onChange={e => {
               props.dispatch({
                 type: "updateAdvancedSettings",
                 payload: {
@@ -51,7 +54,7 @@ const Advanced = (props: {
             id="days"
             type="text"
             className="textbox"
-            onChange={(e) => {
+            onChange={e => {
               props.dispatch({
                 type: "updateAdvancedSettings",
                 payload: {
@@ -71,7 +74,7 @@ const Advanced = (props: {
             id="welkin"
             type="text"
             className="textbox"
-            onChange={(e) => {
+            onChange={e => {
               props.dispatch({
                 type: "updateAdvancedSettings",
                 payload: {
@@ -102,8 +105,7 @@ const Advanced = (props: {
             htmlFor="character-planning-true"
             tabIndex={0}
             role="radio"
-            aria-checked={characterPlanning}
-          >
+            aria-checked={characterPlanning}>
             Character
           </label>
           <input
@@ -124,8 +126,7 @@ const Advanced = (props: {
             htmlFor="character-planning-false"
             tabIndex={0}
             role="radio"
-            aria-checked={!characterPlanning}
-          >
+            aria-checked={!characterPlanning}>
             Weapon
           </label>
         </div>
@@ -144,8 +145,7 @@ const Advanced = (props: {
             htmlFor="preset-1"
             tabIndex={0}
             role="radio"
-            aria-checked={reuse}
-          >
+            aria-checked={reuse}>
             Preset 1
           </label>
 
@@ -162,8 +162,7 @@ const Advanced = (props: {
             htmlFor="preset-2"
             tabIndex={0}
             role="radio"
-            aria-checked={reuse}
-          >
+            aria-checked={reuse}>
             Preset 2
           </label>
 
@@ -180,8 +179,7 @@ const Advanced = (props: {
             htmlFor="preset-3"
             tabIndex={0}
             role="radio"
-            aria-checked={reuse}
-          >
+            aria-checked={reuse}>
             Preset 3
           </label>
         </div>

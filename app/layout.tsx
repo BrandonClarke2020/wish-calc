@@ -1,4 +1,4 @@
-import "./global.scss";
+import "./global.css";
 import Form from "./(components)/client";
 
 export default function RootLayout({
@@ -18,10 +18,15 @@ export default function RootLayout({
           Please turn on Javascript in your browser to use the calculator
         </noscript>
         <footer className="footer">
-          <p>Created by</p>
+          <p>Designed and developed by Brandon Clarke</p>
           <div className="github">
             <p>GitHub page </p>
-            <img src="Github.svg" alt="Github logo" />
+            <a
+              className="link"
+              target="_blank"
+              href="https://github.com/BrandonClarke2020">
+              <img src="Github.svg" alt="Github logo" />
+            </a>
           </div>
           <p>
             Not in any way affiliated with HoYoVerse. This site will{" "}

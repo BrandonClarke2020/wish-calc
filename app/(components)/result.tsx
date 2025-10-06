@@ -165,8 +165,7 @@ const Result = (props: {
             <p
               onClick={() => {
                 console.log(probabilities);
-              }}
-            >
+              }}>
               Wishes in x days:
             </p>
             <p>
@@ -186,8 +185,7 @@ const Result = (props: {
                 <p key={index}>
                   Chance of banner character {index + 1}:
                   <span
-                    style={{ color: generalizeProbability(probability).color }}
-                  >
+                    style={{ color: generalizeProbability(probability).color }}>
                     {" "}
                     {generalizeProbability(probability).probability}{" "}
                   </span>
@@ -196,9 +194,8 @@ const Result = (props: {
             })}
           </div>
         ) : null}
-        <button ref={advancedSettingsButton} onClick={openAdvancedSettings}>
-          Advanced Planning
-        </button>
+        {/* Feature to be added later. Maybe */}
+        {/* <button ref={advancedSettingsButton} onClick={openAdvancedSettings}>Advanced Planning</button> */}
       </div>
     );
   } else {

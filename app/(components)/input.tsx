@@ -42,7 +42,7 @@ const Input = (props: {
         <img src="Intertwined Fate.webp" alt="Intertwined Fate" />
         <input
           autoFocus
-          onChange={(e) => {
+          onChange={e => {
             props.dispatch({
               type: "updateFates",
               payload: parseInt(e.target.value) ? parseInt(e.target.value) : 0,
@@ -62,7 +62,7 @@ const Input = (props: {
         <label htmlFor="primos">Primos</label>
         <img src="Primogem.webp" alt="Primogem" />
         <input
-          onChange={(e) => {
+          onChange={e => {
             props.dispatch({
               type: "updatePrimos",
               payload: parseInt(e.target.value) ? parseInt(e.target.value) : 0,
@@ -81,7 +81,7 @@ const Input = (props: {
         <label htmlFor="starglitter">Starglitter</label>
         <img src="Starglitter.webp" alt="Starglitter" />
         <input
-          onChange={(e) => {
+          onChange={e => {
             props.dispatch({
               type: "updateStarglitter",
               payload: parseInt(e.target.value) ? parseInt(e.target.value) : 0,
@@ -99,7 +99,7 @@ const Input = (props: {
       <div className="input-wrapper">
         <label htmlFor="pity">Pity</label>
         <input
-          onChange={(e) => {
+          onChange={e => {
             props.dispatch({
               type: "updatePity",
               payload: parseInt(e.target.value) ? parseInt(e.target.value) : 0,
@@ -133,8 +133,7 @@ const Input = (props: {
           htmlFor="true"
           tabIndex={0}
           role="radio"
-          aria-checked={props.state.isGuaranteed}
-        >
+          aria-checked={props.state.isGuaranteed}>
           Guaranteed
         </label>
         <input
@@ -155,8 +154,7 @@ const Input = (props: {
           htmlFor="false"
           tabIndex={0}
           role="radio"
-          aria-checked={!props.state.isGuaranteed}
-        >
+          aria-checked={!props.state.isGuaranteed}>
           Not Guaranteed
         </label>
       </div>
